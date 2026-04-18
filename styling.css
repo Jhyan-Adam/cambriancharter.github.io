@@ -1,13 +1,61 @@
 body {
   background: #0a0a0a;
   color: #e8e8e8;
-  font-family: -apple-system, system-ui, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
   margin: 0;
-  min-height: 100vh;
-  display: grid;
-  place-items: center;
+  padding: 3rem 1.5rem;
+  line-height: 1.6;
 }
-main { max-width: 600px; padding: 2rem; }
-h1 { font-weight: 300; letter-spacing: 0.05em; }
-.tagline { color: #ff6700; font-size: 1.2rem; }
-footer { margin-top: 3rem; opacity: 0.6; font-size: 0.9rem; }
+main { max-width: 720px; margin: 0 auto; }
+h1 {
+  font-weight: 300;
+  font-size: 2.5rem;
+  letter-spacing: 0.05em;
+  margin: 0 0 0.25rem;
+}
+.tagline {
+  color: #FF6700;
+  font-size: 1.1rem;
+  margin: 0 0 3rem;
+  letter-spacing: 0.02em;
+}
+h2 {
+  font-weight: 400;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #FF6700;
+  margin: 3rem 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #2a2a2a;
+}
+ul { list-style: none; padding-left: 0; margin: 0; }
+ul ul { padding-left: 1.75rem; margin-top: 0.25rem; }
+.description > ul > li { margin-bottom: 0.9rem; }
+.description > ul > li > strong { color: #FF6700; font-weight: 500; }
+.description ul ul li { padding: 0.1rem 0; color: #bbb; }
+.roadmap .version { margin-bottom: 0.6rem; }
+.roadmap .version-label {
+  font-family: "SF Mono", Menlo, Consolas, monospace;
+  font-weight: 500;
+}
+.roadmap .done .version-label { color: #666; }
+.roadmap .pending .version-label { color: #e8e8e8; }
+.roadmap input[type="checkbox"] {
+  accent-color: #FF6700;
+  margin-right: 0.6rem;
+  transform: translateY(1px);
+  cursor: default;
+}
+.roadmap li { padding: 0.12rem 0; }
+.roadmap li li { color: #999; font-size: 0.95rem; }
+.roadmap label { cursor: default; }
+footer {
+  margin-top: 4rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #2a2a2a;
+  color: #666;
+  font-size: 0.9rem;
+}
+footer a { color: #FF6700; text-decoration: none; }
+footer a:hover { text-decoration: underline; }
