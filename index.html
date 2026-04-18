@@ -4,70 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cambrian Charter</title>
-  <style>
-    * { box-sizing: border-box; }
-    body {
-      background: #0a0a0a;
-      color: #e8e8e8;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
-      margin: 0;
-      padding: 3rem 1.5rem;
-      line-height: 1.6;
-    }
-    main { max-width: 720px; margin: 0 auto; }
-    h1 {
-      font-weight: 300;
-      font-size: 2.5rem;
-      letter-spacing: 0.05em;
-      margin: 0 0 0.25rem;
-    }
-    .tagline {
-      color: #FF6700;
-      font-size: 1.1rem;
-      margin: 0 0 3rem;
-      letter-spacing: 0.02em;
-    }
-    h2 {
-      font-weight: 400;
-      font-size: 1rem;
-      text-transform: uppercase;
-      letter-spacing: 0.2em;
-      color: #FF6700;
-      margin: 3rem 0 1rem;
-      padding-bottom: 0.5rem;
-      border-bottom: 1px solid #2a2a2a;
-    }
-    ul { list-style: none; padding-left: 0; margin: 0; }
-    ul ul { padding-left: 1.75rem; margin-top: 0.25rem; }
-    .description > ul > li { margin-bottom: 0.9rem; }
-    .description > ul > li > strong { color: #FF6700; font-weight: 500; }
-    .description ul ul li { padding: 0.1rem 0; color: #bbb; }
-    .roadmap .version { margin-bottom: 0.6rem; }
-    .roadmap .version-label {
-      font-family: "SF Mono", Menlo, Consolas, monospace;
-      font-weight: 500;
-    }
-    .roadmap .done .version-label { color: #666; }
-    .roadmap .pending .version-label { color: #e8e8e8; }
-    .roadmap input[type="checkbox"] {
-      accent-color: #FF6700;
-      margin-right: 0.6rem;
-      transform: translateY(1px);
-      cursor: default;
-    }
-    .roadmap li { padding: 0.12rem 0; }
-    .roadmap li li { color: #999; font-size: 0.95rem; }
-    .roadmap label { cursor: default; }
-    footer {
-      margin-top: 4rem;
-      padding-top: 1.5rem;
-      border-top: 1px solid #2a2a2a;
-      color: #666;
-      font-size: 0.9rem;
-    }
-    footer a { color: #FF6700; text-decoration: none; }
-    footer a:hover { text-decoration: underline; }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <main>
@@ -75,32 +12,38 @@
     <p class="tagline">A marine ROV project</p>
 
     <section class="description">
-      <h2>Description</h2>
-      <p>Designing and building spherical autonomous marine rovers for data collection, focussing on:</p>
-      <ul>
-        <li><strong>Climate data</strong>
-          <ul>
-            <li>Temperature</li>
-            <li>Salinity</li>
-            <li>Ocean currents</li>
-            <li>Pressure</li>
-          </ul>
-        </li>
-        <li><strong>Geological data</strong>
-          <ul>
-            <li>Topology</li>
-            <li>Bathymetry</li>
-            <li>Geomagnetic field</li>
-            <li>Local magnetic field interaction</li>
-          </ul>
-        </li>
-        <li><strong>Sonic data</strong>
-          <ul>
-            <li>Ultrasonic object detection</li>
-            <li>Ambient hydrophonic acoustics analysis</li>
-          </ul>
-        </li>
-      </ul>
+      <section class="description">
+        <h2>Description</h2>
+        <div class="description-content">
+          <div class="description-text">
+            <p>Designing and building spherical autonomous marine rovers for data collection, focussing on:</p>
+            <ul>
+              <li><strong>Climate data</strong>
+                <ul>
+                  <li>Temperature</li>
+                  <li>Salinity</li>
+                  <li>Ocean currents</li>
+                  <li>Pressure</li>
+                </ul>
+              </li>
+              <li><strong>Geological data</strong>
+                <ul>
+                  <li>Topology</li>
+                  <li>Bathymetry</li>
+                  <li>Geomagnetic field</li>
+                  <li>Local magnetic field interaction</li>
+                </ul>
+              </li>
+              <li><strong>Sonic data</strong>
+                <ul>
+                  <li>Ultrasonic object detection</li>
+                  <li>Ambient hydrophonic acoustics analysis</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <img src="wireframe hidden edges.png" alt="wireframe schematic">
+        </div>
     </section>
 
     <section class="roadmap">
