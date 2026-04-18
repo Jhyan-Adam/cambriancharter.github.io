@@ -36,20 +36,24 @@ ul ul { padding-left: 1.75rem; margin-top: 0.25rem; }
 .description ul ul li { padding: 0.1rem 0; color: #bbb; }
 .description-content {
   display: flex;
-  align-items: stretch;
+  align-items: center;
   gap: 2rem;
+  position: static;
 }
-.description-text { flex: 1; min-width: 0; }
+.description-text {
+  flex: 1;
+  min-width: 0;
+  position: static;
+}
 .description-image {
-  align-self: stretch;
-  width: auto;
-  max-width: 45%;
-  object-fit: cover;
+  width: 40%;
+  height: auto;
+  object-fit: contain;
   border-radius: 4px;
-}
-@media (max-width: 600px) {
-  .description-content { flex-direction: column; }
-  .description-image { max-width: 100%; height: auto; }
+  position: static;
+  display: block;
+  float: none;
+  margin: 0;
 }
 .roadmap .version { margin-bottom: 0.6rem; }
 .roadmap .version-label {
