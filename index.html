@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cambrian Charter</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      background: #0a0a0a;
+      color: #e8e8e8;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+      margin: 0;
+      padding: 3rem 1.5rem;
+      line-height: 1.6;
+    }
+    main { max-width: 720px; margin: 0 auto; }
+    h1 {
+      font-weight: 300;
+      font-size: 2.5rem;
+      letter-spacing: 0.05em;
+      margin: 0 0 0.25rem;
+    }
+    .tagline {
+      color: #FF6700;
+      font-size: 1.1rem;
+      margin: 0 0 3rem;
+      letter-spacing: 0.02em;
+    }
+    h2 {
+      font-weight: 400;
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: #FF6700;
+      margin: 3rem 0 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid #2a2a2a;
+    }
+    ul { list-style: none; padding-left: 0; margin: 0; }
+    ul ul { padding-left: 1.75rem; margin-top: 0.25rem; }
+    .description > ul > li { margin-bottom: 0.9rem; }
+    .description > ul > li > strong { color: #FF6700; font-weight: 500; }
+    .description ul ul li { padding: 0.1rem 0; color: #bbb; }
+    .roadmap .version { margin-bottom: 0.6rem; }
+    .roadmap .version-label {
+      font-family: "SF Mono", Menlo, Consolas, monospace;
+      font-weight: 500;
+    }
+    .roadmap .done .version-label { color: #666; }
+    .roadmap .pending .version-label { color: #e8e8e8; }
+    .roadmap input[type="checkbox"] {
+      accent-color: #FF6700;
+      margin-right: 0.6rem;
+      transform: translateY(1px);
+      cursor: default;
+    }
+    .roadmap li { padding: 0.12rem 0; }
+    .roadmap li li { color: #999; font-size: 0.95rem; }
+    .roadmap label { cursor: default; }
+    footer {
+      margin-top: 4rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #2a2a2a;
+      color: #666;
+      font-size: 0.9rem;
+    }
+    footer a { color: #FF6700; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Cambrian Charter</h1>
+    <p class="tagline">A marine ROV project</p>
+
+    <section class="description">
+      <h2>Description</h2>
+      <p>Designing and building spherical autonomous marine rovers for data collection, focussing on:</p>
+      <ul>
+        <li><strong>Climate data</strong>
+          <ul>
+            <li>Temperature</li>
+            <li>Salinity</li>
+            <li>Ocean currents</li>
+            <li>Pressure</li>
+          </ul>
+        </li>
+        <li><strong>Geological data</strong>
+          <ul>
+            <li>Topology</li>
+            <li>Bathymetry</li>
+            <li>Geomagnetic field</li>
+            <li>Local magnetic field interaction</li>
+          </ul>
+        </li>
+        <li><strong>Sonic data</strong>
+          <ul>
+            <li>Ultrasonic object detection</li>
+            <li>Ambient hydrophonic acoustics analysis</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section class="roadmap">
+      <h2>Roadmap</h2>
+      <ul>
+        <li class="version done">
+          <label><input type="checkbox" checked disabled><span class="version-label">v0-0</span></label>
+          <ul>
+            <li><label><input type="checkbox" checked disabled> Conception of design</label></li>
+          </ul>
+        </li>
+
+        <li class="version done">
+          <label><input type="checkbox" checked disabled><span class="version-label">v0-1</span></label>
+          <ul>
+            <li><label><input type="checkbox" checked disabled> Initial hull design</label></li>
+          </ul>
+        </li>
+
+        <li class="version done">
+          <label><input type="checkbox" checked disabled><span class="version-label">v0-2</span></label>
+          <ul>
+            <li><label><input type="checkbox" checked disabled> Filleted edges</label></li>
+            <li><label><input type="checkbox" checked disabled> Custom conical support (none for grooves)</label></li>
+            <li><label><input type="checkbox" checked disabled> Finer mesh tessellation</label></li>
+            <li><label><input type="checkbox" checked disabled> Elliptical grooves</label></li>
+            <li><label><input type="checkbox" checked disabled> Random seam</label></li>
+          </ul>
+        </li>
+
+        <li class="version done">
+          <label><input type="checkbox" checked disabled><span class="version-label">v0-3</span></label>
+          <ul>
+            <li><label><input type="checkbox" checked disabled> Organic tree support</label></li>
+            <li><label><input type="checkbox" checked disabled> TPMS-D infill 10%</label></li>
+            <li><label><input type="checkbox" checked disabled> Outer brim 10 mm</label></li>
+          </ul>
+        </li>
+
+        <li class="version done">
+          <label><input type="checkbox" checked disabled><span class="version-label">v0-4</span></label>
+          <ul>
+            <li><label><input type="checkbox" checked disabled> Bolt tolerance 0.3 mm → 0.45 mm</label></li>
+            <li><label><input type="checkbox" checked disabled> Gyroid infill 10%</label></li>
+            <li><label><input type="checkbox" checked disabled> Precise z-height</label></li>
+            <li><label><input type="checkbox" checked disabled> Limited internal bridge filtering</label></li>
+            <li><label><input type="checkbox" checked disabled> Elephant foot compensation 12%</label></li>
+            <li><label><input type="checkbox" checked disabled> International/safety orange #FF6700</label></li>
+          </ul>
+        </li>
+
+        <li class="version done">
+          <label><input type="checkbox" checked disabled><span class="version-label">v0-5</span></label>
+          <ul>
+            <li><label><input type="checkbox" checked disabled> TPMS-D infill 12%</label></li>
+            <li><label><input type="checkbox" checked disabled> Internal bridge filtering</label></li>
+            <li><label><input type="checkbox" checked disabled> Reverse only internal perimeters</label></li>
+          </ul>
+        </li>
+
+        <li class="version done">
+          <label><input type="checkbox" checked disabled><span class="version-label">v0-6</span></label>
+          <ul>
+            <li><label><input type="checkbox" checked disabled> Variable layer height</label></li>
+            <li><label><input type="checkbox" checked disabled> Strong tree support</label></li>
+            <li><label><input type="checkbox" checked disabled> Precise wall</label></li>
+            <li><label><input type="checkbox" checked disabled> 4 top shell layers</label></li>
+            <li><label><input type="checkbox" checked disabled> 4 bottom shell layers</label></li>
+            <li><label><input type="checkbox" checked disabled> PETG profile tuning</label></li>
+            <li><label><input type="checkbox" checked disabled> Fan speed thresholds: 40, 30, 80, 8</label></li>
+          </ul>
+        </li>
+
+        <li class="version done">
+          <label><input type="checkbox" checked disabled><span class="version-label">v0-7</span></label>
+          <ul>
+            <li><label><input type="checkbox" checked disabled> Archimedean spiral patterns</label></li>
+            <li><label><input type="checkbox" checked disabled> Snug normal support</label></li>
+            <li><label><input type="checkbox" checked disabled> Fan speed thresholds: 10, 30, 70, 16</label></li>
+            <li><label><input type="checkbox" checked disabled> Slow down for outer walls</label></li>
+            <li><label><input type="checkbox" checked disabled> 50% overhang cooling activation</label></li>
+            <li><label><input type="checkbox" checked disabled> 75% overhang speed</label></li>
+            <li><label><input type="checkbox" checked disabled> 50% internal bridge speed</label></li>
+          </ul>
+        </li>
+
+        <li class="version pending">
+          <label><input type="checkbox" disabled><span class="version-label">v0-8</span></label>
+          <ul>
+            <li><label><input type="checkbox" disabled> Bolt tolerance 0.5 mm</label></li>
+            <li><label><input type="checkbox" disabled> Reverted from orange to grey for prototyping</label></li>
+            <li><label><input type="checkbox" disabled> Simplify mesh in Orca for uniform tessellation</label></li>
+            <li><label><input type="checkbox" disabled> Contour scarf joint seam</label></li>
+            <li><label><input type="checkbox" disabled> Bed temperature 70 °C</label></li>
+            <li><label><input type="checkbox" disabled> 10% overhang cooling activation</label></li>
+            <li><label><input type="checkbox" disabled> 90% overhang speed</label></li>
+            <li><label><input type="checkbox" disabled> Internal bridge speed default (-1)</label></li>
+          </ul>
+        </li>
+
+        <li class="version pending">
+          <label><input type="checkbox" disabled><span class="version-label">v1-0</span></label>
+          <ul>
+            <li><label><input type="checkbox" disabled> Sealed hull under submersion</label></li>
+            <li><label><input type="checkbox" disabled> Concrete mass internal casing</label></li>
+            <li><label><input type="checkbox" disabled> Complete mechanical assembly possible</label></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <footer>
+      <a href="mailto:contact@cambriancharter.co.za">contact@cambriancharter.co.za</a>
+    </footer>
+  </main>
+</body>
+</html>
