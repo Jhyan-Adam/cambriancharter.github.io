@@ -46,10 +46,10 @@ ul ul { padding-left: 1.75rem; margin-top: 0.25rem; }
   position: static;
 }
 .description-image {
-  width: 80%;
+  width: 40%;
   height: auto;
   object-fit: contain;
-  border-radius: 10px;
+  border-radius: 20px;
   position: static;
   display: block;
   float: none;
