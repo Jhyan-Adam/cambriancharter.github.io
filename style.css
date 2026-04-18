@@ -34,6 +34,23 @@ ul ul { padding-left: 1.75rem; margin-top: 0.25rem; }
 .description > ul > li { margin-bottom: 0.9rem; }
 .description > ul > li > strong { color: #FF6700; font-weight: 500; }
 .description ul ul li { padding: 0.1rem 0; color: #bbb; }
+.description-content {
+  display: flex;
+  align-items: stretch;
+  gap: 2rem;
+}
+.description-text { flex: 1; min-width: 0; }
+.description-image {
+  align-self: stretch;
+  width: auto;
+  max-width: 45%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+@media (max-width: 600px) {
+  .description-content { flex-direction: column; }
+  .description-image { max-width: 100%; height: auto; }
+}
 .roadmap .version { margin-bottom: 0.6rem; }
 .roadmap .version-label {
   font-family: "SF Mono", Menlo, Consolas, monospace;
