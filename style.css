@@ -45,15 +45,25 @@ ul ul { padding-left: 1.75rem; margin-top: 0.25rem; }
   min-width: 0;
   position: static;
 }
-.description-image {
+.description-figure {
   width: 40%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.description-figure img {
+  width: 100%;
   height: auto;
   object-fit: contain;
-  border-radius: 20px;
-  position: static;
+  border-radius: 4px;
   display: block;
-  float: none;
-  margin: 0;
+}
+.description-figure figcaption {
+  font-size: 0.85rem;
+  color: #888;
+  text-align: center;
+  font-style: italic;
 }
 .gallery-grid {
   display: grid;
