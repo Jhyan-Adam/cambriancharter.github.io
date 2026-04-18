@@ -46,7 +46,7 @@ ul ul { padding-left: 1.75rem; margin-top: 0.25rem; }
   position: static;
 }
 .description-image {
-  width: 40%;
+  width: 80%;
   height: auto;
   object-fit: contain;
   border-radius: 10px;
